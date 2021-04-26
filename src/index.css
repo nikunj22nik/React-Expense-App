@@ -6,7 +6,51 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.expenseName{
+  height: 30px;
+  width:270px;
+  border:1 px solid blue;
+  padding:5px;
+  font-size: 20px;
+}
+.btn{
+  padding: 10px;
+  width:250px;
+  background-color: rgb(45, 45, 83);
+  border:2px solid black;
+  color:white;
+  font-size: 17px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.form{
 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.details{
+  height:120px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.income{
+  border: 2px solid black;
+  padding:20px;
+  font-size: 25px;
+  background-color: green;
+  
+}
+.expense{
+  border: 2px solid black;
+  padding:20px;
+  font-size: 25px;
+  background-color: red;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
