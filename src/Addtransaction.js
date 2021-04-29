@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import "firebase/performance";
 import "firebase/firestore";
 
-const AddTransaction=()=>{
+const AddTransaction=(props)=>{
 const [text,settext]=React.useState("");
 const [amount,setamount]=React.useState("");
 const addingToDatabase=(e)=>{
@@ -20,7 +20,8 @@ const addingToDatabase=(e)=>{
 Amount:originalAmount,
 Text:text,
 income:0,
-Expense:amount
+Expense:amount,
+name:props.name
        }).then((docRef)=>{
 console.log(docRef+"succesfully addes");
       
@@ -37,7 +38,8 @@ console.log("help me");
 Amount:amount,
 Text:text,
 income:amount,
-Expense:0
+Expense:0,
+name:props.name
     }).then((docRef)=>{
 console.log(docRef+"succesfully addes");
    

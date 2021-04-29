@@ -22,7 +22,7 @@ docref.delete().then(()=>{
         <th>Price</th>
         <th>DeleteItem</th>
         </tr>
-        
+{/*https://www.youtube.com/watch?v=X9Eh7_FUYzw*/}        
         {
             props.history.map((curr)=>{
            return(

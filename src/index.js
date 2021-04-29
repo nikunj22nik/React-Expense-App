@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Signup from "./signup"; 
+import Login from "./Login";
+import { BrowserRouter, Route, Link,Switch } from "react-router-dom";
 import firebase from "firebase/app";
 import "firebase/performance";
 import "firebase/firestore";
@@ -19,7 +22,14 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <BrowserRouter>
+<Switch>
+
+  <Route exact path="/signup" exact component={Signup}></Route>
+<Route exact path="/expenseapp/:name" exact component={App}></Route>
+<Route exact path="/login" exact component={Login}></Route>
+</Switch>
+</BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

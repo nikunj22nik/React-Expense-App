@@ -8,6 +8,7 @@ import AddTransaction from './Addtransaction';
 import firebase from "firebase/app";
 import "firebase/performance";
 import "firebase/firestore";
+import { BrowserRouter, Route,useParams } from "react-router-dom";
 
 let expense1=0;
   let income1=0;
@@ -18,9 +19,10 @@ let count=0;
   const App =()=> {
   const [alldata,setdata]=React.useState([]);
   const [alerterror,setError]=React.useState("");  
+  const { name }=useParams();
   React.useEffect(()=>{
     console.log("hii ine the useEffect");
-    firebase.firestore().collection('Expenses').onSnapshot((snapshot)=>{
+    firebase.firestore().collection('Expenses').where("name","==",name).onSnapshot((snapshot)=>{
         console.log(snapshot+"hii");
     arr=[];
     expense1=0;
@@ -54,8 +56,8 @@ let count=0;
       <Showdetails income={income1} expense={expense1}/>
       <h3 style={{marginBottom:0}} >Your History</h3>
       <img src="https://miro.medium.com/max/3288/1*QWL8FlOH8HACzfcMW6K8QA.png" width='210'/>
-      <History history={arr}/>
-      <AddTransaction />
+      <History history={arr} />
+      <AddTransaction name={name}/>
     </div>
     )
 
