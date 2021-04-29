@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Expense-App/static/css/main.dd3a0a56.chunk.css",
+    "main.js": "/React-Expense-App/static/js/main.cbdb7228.chunk.js",
+    "main.js.map": "/React-Expense-App/static/js/main.cbdb7228.chunk.js.map",
+    "runtime-main.js": "/React-Expense-App/static/js/runtime-main.a52b0782.js",
+    "runtime-main.js.map": "/React-Expense-App/static/js/runtime-main.a52b0782.js.map",
+    "static/js/2.c87edb25.chunk.js": "/React-Expense-App/static/js/2.c87edb25.chunk.js",
+    "static/js/2.c87edb25.chunk.js.map": "/React-Expense-App/static/js/2.c87edb25.chunk.js.map",
+    "index.html": "/React-Expense-App/index.html",
+    "static/css/main.dd3a0a56.chunk.css.map": "/React-Expense-App/static/css/main.dd3a0a56.chunk.css.map",
+    "static/js/2.c87edb25.chunk.js.LICENSE.txt": "/React-Expense-App/static/js/2.c87edb25.chunk.js.LICENSE.txt",
+    "static/media/avatar.png": "/React-Expense-App/static/media/avatar.f6b9b89b.png",
+    "static/media/login.css": "/React-Expense-App/static/media/bg.a6e3c68c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a52b0782.js",
+    "static/js/2.c87edb25.chunk.js",
+    "static/css/main.dd3a0a56.chunk.css",
+    "static/js/main.cbdb7228.chunk.js"
+  ]
+}
